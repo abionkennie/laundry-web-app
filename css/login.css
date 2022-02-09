@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+ :root {
+    --orange: rgba(228, 94, 5, 0.932);
+    --white: #fff;
+    --black: rgb(4, 28, 78);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    color: var(--white);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #e9c9ab, #6d6a67);
+}
+
+.container {
+    position: relative;
+    align-items: center;
+    padding: 20px 30px;
+    width: 400px;
+    background: var(--black);
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.container .outer {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.switch {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    border-bottom: 1px solid var(--orange);
+}
+
+.switch:after {
+    content: "";
+    height: 6px;
+    width: 60px;
+    background: #dd610e;
+    border-radius: 60px 60px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    transition: 0.3s ease;
+}
+
+.switch.active {
+    border-bottom: 1px solid #12ff00;
+}
+
+.switch.active:after {
+    left: 82px;
+    width: 70px;
+    background: #12ff00;
+}
+
+.login {
+    padding: 5px 12px;
+    background: linear-gradient(45deg, #eecda7, #fc7a00);
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signup {
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.outer #form {
+    width: 200%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+}
+
+#page {
+    margin: auto;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.element {
+    position: relative;
+}
+
+.element input {
+    width: 80%;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: #294183;
+    border: 1px solid #f5f4f4;
+    padding-left: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+input::placeholder {
+    color: #d4cdcd;
+    font-size: 20px;
+}
+
+.element span {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    font-size: 18px;
+}
+
+#btn1 {
+    padding: 5px 25px;
+    background: linear-gradient(45deg, #eea44f, #fc7a00);
+    border-radius: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#btn1:active {
+    transform: scale(1.01);
+}

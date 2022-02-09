@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product example · Bootstrap v5.2</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -19,10 +23,12 @@
                 <div class="back-decor5">
 
                     <div class="navigation">
-                        <a href="#"><img src="images/1.png"></a>
-                        <h1>
-                            <a href="#" class="logo"><span>T</span>winry</a>
-                        </h1>
+                        <div class="navbar1">
+                            <a href="#"><img src="images/1.png"></a>
+                            <h1>
+                                <a href="#" class="logo"><span>T</span>winry</a>
+                            </h1>
+                        </div>
 
                         <nav class="navbar">
                             <a href="#home" style="color:var(--orange)">home</a>
@@ -31,16 +37,16 @@
                             <a href="#about">about</a>
                             <a href="#review">review</a>
                             <a href="#contact">contact</a>
-                            <a href="#" class="btn">get started</a>
+                            <a href="login.html" class="btn">get started</a>
                         </nav>
                     </div>
                     <div class="content">
-                        <div class="content1">
-                            <h3 style="font-size:3.5em;">Your freshness, our priority</h3>
-                            <p style="font-size:1.4em; margin-top:2em;">We are Committed to your Cleanliness at all time</p>
+                        <div class="content1" style="margin-left: 2em;">
+                            <h3 style="font-size:3.5em; padding-bottom:10px; position: relative;">Your freshness, our priority</h3>
+                            <p style="font-size:1.4em; margin-top:1.1em;">We are Committed to your Cleanliness at all time...</p>
 
                             <a href="#" class="btn" style="font-weight: normal; font-size:1.5em;">Explore</a>
-                            <a href="#" style="margin-left:1em; margin-top:3em; float:right; font-size:1.5em; color: var(--orange);">about us ></a>
+                            <a href="#" style="margin-left: 5em; margin-top:3.2em;  font-size:1.5em; color: var(--orange);"><i class="fa fas-angle-double-right" id="about"></i></a>
                         </div>
                         <div class="picture-box"><img src="images/ironing.jpg" alt=""></div>
                     </div>
@@ -92,8 +98,12 @@
                             </div>
                         </div>
                     </section>
+
+
                 </div>
+
             </div>
+        </div>
 
 
 
@@ -101,6 +111,9 @@
 
 
     </main>
+
+    <script src="jQuery.js"></script>
+    <script src="laundry.js"></script>
 
 </body>
 
