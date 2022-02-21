@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
- :root {
+:root {
     --orange: #F88263;
     --white: #fff;
     --black: rgb(4, 28, 78);
@@ -37,67 +37,10 @@ body {
     margin-top: 40px;
     text-align: center;
     position: relative;
-    overflow: hidden;
-}
-
-a {
-    text-decoration: none;
-}
-
-.switch {
-    position: absolute;
-    right: 30px;
-    display: flex;
-    border-bottom: 1px solid var(--orange);
-}
-
-.switch:after {
-    content: "";
-    height: 6px;
-    width: 60px;
-    background: var(--orange);
-    border-radius: 60px 60px 0 0;
-    position: absolute;
-    bottom: 0;
-    left: 8px;
-    transition: 0.3s ease;
-}
-
-.switch.active {
-    border-bottom: 1px solid var(--blue);
-}
-
-.switch.active:after {
-    left: 82px;
-    width: 70px;
-    background: var(--blue);
-}
-
-.login {
-    padding: 5px 12px;
-    background: linear-gradient(45deg, #eecda7, var(--orange));
-    margin-bottom: 10px;
-    border-radius: 50px;
-    text-align: right;
-    margin-left: 4px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.signup {
-    padding: 5px 12px;
-    margin-bottom: 10px;
-    border-radius: 50px;
-    text-align: right;
-    margin-left: 4px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 0.3s ease;
 }
 
 .outer #form {
-    width: 200%;
+    width: 100%;
     position: relative;
     display: flex;
     margin: auto;
@@ -120,11 +63,13 @@ label {
     text-transform: uppercase;
 }
 
-.element {
+.element,
+.services {
     position: relative;
 }
 
-.element input {
+.element input,
+.services {
     width: 80%;
     height: 40px;
     border-radius: 4px;
@@ -136,9 +81,11 @@ label {
     letter-spacing: 1px;
 }
 
-input::placeholder {
+input::placeholder,
+.label_input {
     color: #d4cdcd;
     font-size: 20px;
+    text-transform: capitalize;
 }
 
 .element span {
@@ -150,7 +97,7 @@ input::placeholder {
 
 #btn1 {
     padding: 5px 25px;
-    background: linear-gradient(45deg, #eea44f, var(--orange));
+    background: linear-gradient(45deg, #eea44f, #fc7a00);
     border-radius: 50px;
     font-size: 25px;
     text-transform: uppercase;
