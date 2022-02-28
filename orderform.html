@@ -7,84 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product example · Bootstrap v5.2</title>
 
-    <link rel="stylesheet" href="./css/orderform.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://bootswatch.com/quartz/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/orderform.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 
-</body>
-<div class="container">
-    <div class="outer">
-        <form class="orderform.html" id="form">
-            <div id="page">
-                <label>Order Form</label>
-                <div class="element">
-                    <input type="text" placeholder="Please enter your name">
-                    <span class="fas fa-user"></span>
-                </div>
+    <div class="container">
+        <div class="outer">
+            <form class="orderform" id="form">
+                <div id="page">
+                    <label>Order Form</label>
+                    <div class="element">
+                        <input type="text" placeholder="Please enter your name">
+                        <span class="fas fa-user"></span>
+                    </div>
 
-                <div class="element">
-                    <input type="text" placeholder="Phone Number">
-                    <span class="fas fa-lock"></span>
-                </div>
+                    <div class="element">
+                        <input type="text" placeholder="Phone Number">
+                        <span class="fas fa-lock"></span>
+                    </div>
 
-                <div class="element">
-                    <input type="text" placeholder="Address">
-                    <span class="fas fa-location-arrow"></span>
-                </div>
+                    <div class="element">
+                        <input type="text" placeholder="Address">
+                        <span class="fas fa-location-arrow"></span>
+                    </div>
 
-                <div class="element">
-                    <select class="services" style="width: 90% !important;">
+                    <div class="element">
+                        <select class="services" style="width: 90% !important;">
                         <!-- <option value="">Services</option> -->
-                        <option value="">Pick-up only</option>
-                        <option value="">Delivery only</option>
-                        <option value="">Pick-up & Delivery</option>
-                </select>
-                </div>
-                <div class="element">
-                    <select class="services" style="width: 90% !important;">
-                    <option value="">Type of Cloth</option>
-                    <option value="">Shirt</option>
-                    <option value="">Trousers</option>
-                    <option value="">Skirt</option>
-                    <option value="">Gown</option>
-                    <option value="">Towel</option>
-                    <option value="">Native</option>
-                    <option value="">Baby wears</option>
-                    <option value="">Gown</option>
-                    <option value="">Wedding Gown</option>
-                    <option value="">Suits</option>
-                    <option value="">Pyjamas</option>
-                    <option value="">Bed Sheet</option>
-                    </select>
-                </div>
-                <div class="element" style="width: 90% !important; display: flex; align-items: center; justify-content: space-between; margin-left: 20px;">
-                    <input type="number" placeholder="How many">
-                    <button type="submit" id="btn1" style="background: linear-gradient(45deg, #eea44f, var(--blue)); margin-bottom: 20px;">Add</button>
-                </div>
+                             <option value="">Pick-up only</option>
+                             <option value="">Delivery only</option>
+                             <option value="">Pick-up & Delivery</option>
+                        </select>
+                    </div>
+                    <div class="element">
+                        <select class="services" id="type of cloth" style="width: 90% !important;">
+                            <option value="">Type of Cloth</option>
+                            <option value="">Shirt</option>
+                            <option value="">Trousers</option>
+                            <option value="">Skirt</option>
+                            <option value="">Gown</option>
+                            <option value="">Towel</option>
+                            <option value="">Native</option>
+                            <option value="">Baby wears</option>
+                            <option value="">Gown</option>
+                            <option value="">Wedding Gown</option>
+                            <option value="">Suits</option>
+                            <option value="">Pyjamas</option>
+                            <option value="">Bed Sheet</option>
+                        </select>
+                    </div>
+                    <div class="element" style="width: 90% !important; display: flex; align-items: center; justify-content: space-between; margin-left: 20px;">
+                        <input type="number" placeholder="How many?" id="How many?">
+                        <button type="submit" id="btn1" onclick="AddRow()" style="background: linear-gradient(45deg, #eea44f, var(--blue)); margin-left: 10px; margin-bottom: 25px;">Add</button>
+                    </div>
+
+                    <table class="table table-striped" id="content-display">
+                        <thead>
+                            <tr>
+                                <th>Type of Cloth</th>
+                                <th>How many?</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-list"></tbody>
+                    </table>
 
 
-                <div class="element">
-                    <select class="services" style="width: 90% !important;">
+                    <div class="element">
+                        <select class="services" style="width: 90% !important;">
                             <option value="">Payment Type</option>
                             <option value="">Cash</option>
                             <option value="">Card</option>
                     </select>
+                    </div>
+                    <div class="element" style="width: 95% !important; display: flex;">
+                        <label style="text-transform: capitalize; font-weight: normal; float: left; font-size: 12px;">Expected Delivery Date</label>
+                        <input type="date" placeholder=" ">
+                    </div>
+
+                    <button type="submit" id="btn1" style="background: linear-gradient(45deg, #eea44f, var(--blue));">Submit</button>
+
                 </div>
-                <div class="element" style="width: 95% !important; display: flex;">
-                    <label style="text-transform: capitalize; font-weight: normal; float: left; font-size: 12px;">Expected Delivery Date</label>
-                    <input type="date" placeholder=" ">
-                </div>
 
-                <button type="submit" id="btn1" style="background: linear-gradient(45deg, #eea44f, var(--blue));">Submit</button>
-
-            </div>
-
-        </form>
+            </form>
+        </div>
     </div>
-</div>
+    <script src="orderform.js"></script>
+</body>
 
 </html>
