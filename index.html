@@ -31,10 +31,17 @@
                         </div>
 
                         <nav class="navbar">
-                            <a href="#home" style="color:var(--orange)">home</a>
-                            <a href="#services">services</a>
-                            <a href="#about">about</a>
-                            <a href="login.html" class="btn">get started</a>
+                            <ul>
+                                <li><a href="#home" style="color:var(--orange)">home</a></li>
+                                <li class="clickable-li" onclick='showDropdown()'>services
+                                    <ul id="myDropdown" class="dropdown-content" onmouseleave="closeMe()">
+                                        <li><a href="test.html">Transaction History</a></li>
+                                        <li><a href="test.html">Make order</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="login.html" class="btn">get started</a></li>
+                            </ul>
                         </nav>
                     </div>
                     <div class="content">
@@ -109,8 +116,8 @@
 
     </main>
 
-    <script src="jQuery.js"></script>
-    <script src="laundry.js"></script>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/laundry.js"></script>
 
 </body>
 

@@ -9,9 +9,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://bootswatch.com/quartz/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/quartz/bootstrap.min.css"> -->
 
     <link rel="stylesheet" href="./css/orderform.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -40,45 +42,50 @@
 
                     <div class="element">
                         <select class="services" style="width: 90% !important;">
-                        <!-- <option value="">Services</option> -->
+                        <!-- <option value="">Services</option> font-size: 15px; -->
                              <option value="">Pick-up only</option>
                              <option value="">Delivery only</option>
                              <option value="">Pick-up & Delivery</option>
                         </select>
                     </div>
-                    <div class="element">
-                        <select class="services" id="type of cloth" style="width: 90% !important;">
-                            <option value="">Type of Cloth</option>
-                            <option value="">Shirt</option>
-                            <option value="">Trousers</option>
-                            <option value="">Skirt</option>
-                            <option value="">Gown</option>
-                            <option value="">Towel</option>
-                            <option value="">Native</option>
-                            <option value="">Baby wears</option>
-                            <option value="">Gown</option>
-                            <option value="">Wedding Gown</option>
-                            <option value="">Suits</option>
-                            <option value="">Pyjamas</option>
-                            <option value="">Bed Sheet</option>
+                    <div class="table-element">
+                        <div class="element">
+                            <select class="services" id="select" style="width: 90% !important;">
+                            <option value="">Fabric</option>
+                            <option value="Shirt">Shirt</option>
+                            <option value="Trousers">Trousers</option>
+                            <option value="Skirt">Skirt</option>
+                            <option value="Gown">Gown</option>
+                            <option value="Towel">Towel</option>
+                            <option value="Native">Native</option>
+                            <option value="Baby wears">Baby wears</option>
+                            <option value="Gown">Gown</option>
+                            <option value="Wedding Gown">Wedding Gown</option>
+                            <option value="Suits">Suits</option>
+                            <option value="Pyjamas">Pyjamas</option>
+                            <option value="Bed Sheet">Bed Sheet</option>
+                            <option value="Duvet">Duvet</option>
+
+                            
                         </select>
-                    </div>
-                    <div class="element" style="width: 90% !important; display: flex; align-items: center; justify-content: space-between; margin-left: 20px;">
-                        <input type="number" placeholder="How many?" id="How many?">
-                        <button type="submit" id="btn1" onclick="AddRow()" style="background: linear-gradient(45deg, #eea44f, var(--blue)); margin-left: 10px; margin-bottom: 25px;">Add</button>
-                    </div>
 
-                    <table class="table table-striped" id="content-display">
-                        <thead>
-                            <tr>
-                                <th>Type of Cloth</th>
-                                <th>How many?</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody id="order-list"></tbody>
-                    </table>
+                            <div class="element" style="width: 90% !important; display: flex; align-items: center; justify-content: space-between; margin-left: 20px;">
+                                <input type="number" placeholder="Quantity" id="quantity">
+                                <button type="submit" id="btn1" style="background: linear-gradient(45deg, #eea44f, var(--blue)); margin-left: 10px; margin-bottom: 25px;">Add</button>
+                            </div>
+                        </div>
 
+                        <table id="content-display">
+                            <thead>
+                                <tr>
+                                    <th>Fabric</th>
+                                    <th>Quantity</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-list"></tbody>
+                        </table>
+                    </div>
 
                     <div class="element">
                         <select class="services" style="width: 90% !important;">
@@ -89,17 +96,17 @@
                     </div>
                     <div class="element" style="width: 95% !important; display: flex;">
                         <label style="text-transform: capitalize; font-weight: normal; float: left; font-size: 12px;">Expected Delivery Date</label>
-                        <input type="date" placeholder=" ">
+                        <input type="date" placeholder=" " style="font-size: 15px;">
                     </div>
 
-                    <button type="submit" id="btn1" style="background: linear-gradient(45deg, #eea44f, var(--blue));">Submit</button>
+                    <button type="button" id="btn1" style="background: linear-gradient(45deg, #eea44f, var(--blue))" ;>Submit</button>
 
                 </div>
 
             </form>
         </div>
     </div>
-    <script src="orderform.js"></script>
+    <script src="./js/orderform.js"></script>
 </body>
 
 </html>
