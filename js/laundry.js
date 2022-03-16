@@ -35,9 +35,3 @@ function closeMe() {
         $(".dropdown-content").css("display", "none");
     }
 }
-
-// document.querySelector(".navbar ul li:nth-child(2)").addEventListener("click",
-//     function() {
-//         this.classList.add(".subnav");
-
-//     });

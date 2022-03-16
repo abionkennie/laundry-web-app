@@ -3,7 +3,7 @@
     --orange: #F88263;
     --white: #fff;
     --black: rgb(4, 28, 78);
-    --blue: #071d27;
+    --blue: #2AB0F0;
 }
 
 * {
@@ -98,7 +98,7 @@ input::placeholder,
 
 #btn1 {
     padding: 5px 25px;
-    background: linear-gradient(45deg, #eea44f, #fc7a00);
+    background: linear-gradient(45deg, #eecda7, var(--blue));
     border-radius: 50px;
     font-size: 25px;
     text-transform: uppercase;
