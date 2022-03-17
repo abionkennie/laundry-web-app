@@ -185,19 +185,13 @@
                 color: var(--white);
             }
             
-            .container {
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-                grid-gap: 2em;
-                margin-left: 2em;
-            }
-            
             .content {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 2em;
                 margin-left: 2em;
                 margin-bottom: 2em;
+                color: var(--black);
             }
             
             .content1 {
@@ -226,7 +220,29 @@
                 height: 25rem;
             }
             
+            .container {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+                grid-gap: 2em;
+                margin-top: 50px;
+            }
+            
+            .row {
+                float: right;
+            }
+            
+            .cat-icon {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            
             .cat-cap {
+                margin-right: 100px;
+                margin-top: -150px;
+                margin-bottom: 100px;
+                justify-content: center;
+                float: right;
                 width: 30em;
                 height: 6em;
                 padding: 10px;
@@ -241,11 +257,15 @@
                 box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
             }
             
-            #desc0 {
-                margin-top: 120px;
-                padding: 10px;
+            .desc0 h2 {
+                margin-top: 150px;
+                margin-left: 50px;
+                margin-bottom: 150px;
+                margin-right: 50px;
+                padding-top: 100px;
                 line-height: 30px;
                 font-weight: bolder;
+                color: var(--black);
             }
             
             #desc1,
@@ -287,5 +307,5 @@
                 z-index: 10;
                 transform: translateX(-50%);
                 border: 10px solid;
-                border-color: transparent transparent #294183 transparent
+                border-color: transparent transparent #294183 transparent;
             }
